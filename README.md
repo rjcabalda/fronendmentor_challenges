@@ -25,15 +25,17 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 - Live Site URL: [URL...](https://rjcabalda.github.io/qr-code-component-main/index.html)
 
 ## My process
--set up the mark up.
--styling the with and height of the container.
--aligning the child element in the container by using flexbox.
--setting color, font weight and font sizes.
+- set up the mark up.
+- styling the with and height of the container.
+- aligning the child element in the container by using flexbox.
+- setting color using css variables
+- setting font weight and font sizes.
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
+- CSS variables
 - Flexbox
 - desktop-first workflow
 
@@ -54,6 +56,15 @@ To see how you can add code snippets, see below:
       </div>
 ```
 ```css
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%);
+    --attribution: hsl(228, 45%, 44%);
+}
+
 .container{
     max-width: 100%;
     height: 100vh;
